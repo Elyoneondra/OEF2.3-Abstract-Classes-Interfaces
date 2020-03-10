@@ -23,7 +23,7 @@ $MS->ShowMessages();
     <div class="row">
 
         <?php
-        $cities = $Container->getCityLoader()->Load();
+        $cities = $Container->getImageLoader()->Load();
         $template = $VS->LoadTemplate("steden");
 
         print $VS->ReplaceCities( $cities, $template);

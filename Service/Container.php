@@ -6,7 +6,7 @@ class Container
     private $DBM;
     private $viewService;
     private $messageService;
-    private $cityLoader;
+    private $imageLoader;
     private $uploadService;
     private $authentication;
 
@@ -58,14 +58,14 @@ class Container
     }
 
     /**
-     * @return CityLoader
+     * @return ImageLoader
      */
-    public function getCityLoader()
+    public function getImageLoader()
     {
-        if ( $this->cityLoader === null ){
-            $this->cityLoader = new CityLoader( $this->getDBM() );
+        if ( $this->imageLoader === null ){
+            $this->imageLoader = new ImageLoader( $this->getDBM() );
         }
-        return $this->cityLoader;
+        return $this->imageLoader;
     }    
 
     /**

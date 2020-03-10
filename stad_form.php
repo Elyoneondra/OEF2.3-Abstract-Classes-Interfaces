@@ -1,23 +1,26 @@
 <?php
 require_once "lib/autoload.php";
 
+$imageLoader = $Container->getImageLoader();
+
 $css = array( "style.css" );
 $VS->BasicHead( $css );
 ?>
 <body>
 
 <div class="jumbotron text-center">
-    <h1>Formulier Stad</h1>
 </div>
 
 <div class="container">
     <div class="row">
 
         <?php
-        $cities = $Container->getCityLoader()->Load( $id = $_GET['id'] );
+        $images = $Container->getImageLoader()->Load( $id = $_GET['id'] );
         $template = $VS->LoadTemplate("stad_form");
+var_dump( $images );
+        print $VS->ReplaceCities( $images, $template);
 
-        print $VS->ReplaceCities( $cities, $template);
+        $type = $images->getType();
         ?>
 
     </div>

@@ -1,10 +1,9 @@
 <?php
-class City extends AbstractImageInfo
+class Nature extends AbstractImageInfo
 {
-          public $type;
-          public $country;
-          public $continent;
-
+          private $type;
+          private $family;
+          private $animal;
 
           /**
            * Get the value of type
@@ -27,41 +26,41 @@ class City extends AbstractImageInfo
           }
 
           /**
-           * Get the value of country
+           * Get the value of family
            */ 
-          public function getCountry()
+          public function getFamily()
           {
-                    return $this->country;
+                    return $this->family;
           }
 
           /**
-           * Set the value of country
+           * Set the value of family
            *
            * @return  self
            */ 
-          public function setCountry($country)
+          public function setFamily($family)
           {
-                    $this->country = $country;
+                    $this->family = $family;
 
                     return $this;
           }
 
           /**
-           * Get the value of continent
+           * Get the value of animal
            */ 
-          public function getContinent()
+          public function getAnimal()
           {
-                    return $this->continent;
+                    return $this->animal;
           }
 
           /**
-           * Set the value of continent
+           * Set the value of animal
            *
            * @return  self
            */ 
-          public function setContinent($continent)
+          public function setAnimal($animal)
           {
-                    $this->continent = $continent;
+                    $this->animal = $animal;
 
                     return $this;
           }
