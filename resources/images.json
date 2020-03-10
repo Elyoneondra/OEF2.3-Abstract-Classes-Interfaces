@@ -1,0 +1,50 @@
+[
+    {
+        "img_id": 1,
+        "img_filename": "london_2423609b",
+        "img_title": "Big Ben",
+        "img_width": 2330,
+        "img_height": 4400,
+        "img_type": "City",
+        "img_country": "United Kingdom",
+        "img_continent": "Europe",
+        "img_family": "",
+        "img_animal": null
+    },
+    {
+        "img_id": 2,
+        "img_filename": "paris",
+        "img_title": "Eiffeltoren",
+        "img_width": 3000,
+        "img_height": 4000,
+        "img_type": "City",
+        "img_country": "France",
+        "img_continent": "Europe",
+        "img_family": null,
+        "img_animal": null
+    },
+    {
+        "img_id": 3,
+        "img_filename": "berlin",
+        "img_title": "De Muur",
+        "img_width": 5600,
+        "img_height": 1400,
+        "img_type": "City",
+        "img_country": "Germany",
+        "img_continent": "Europe",
+        "img_family": null,
+        "img_animal": null
+    },
+    {
+        "img_id": 4,
+        "img_filename": "kleine_eikelboorder",
+        "img_title": "Kleine Eikelboorder",
+        "img_width": 5000,
+        "img_height": 4000,
+        "img_type": "Nature",
+        "img_country": "",
+        "img_continent": null,
+        "img_family": "Felidae",
+        "img_animal": "Cat"
+    }
+]
