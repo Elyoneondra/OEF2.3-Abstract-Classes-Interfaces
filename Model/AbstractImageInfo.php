@@ -9,6 +9,11 @@ abstract class AbstractImageInfo
 
           abstract public function getType();
 
+          public function __construct($name)
+          {
+                    $this->name = $name;
+          }
+          
           /**
            * @return mixed
            */

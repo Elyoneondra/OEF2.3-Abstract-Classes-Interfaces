@@ -19,11 +19,11 @@ class ImageLoader
         foreach ( $data as $row )
         {
           if ($row['img_type'] == 'City' ) {
-                    $image = new City();
+                    $image = new City($row['img_title']);
                     $image->setCountry($row['img_country']);
                     $image->setContinent($row['img_continent']);
           } else {
-                    $image = new Nature();
+                    $image = new Nature($row['img_title']);
                     $image->setFamily($row['img_family']);
                     $image->setAnimal($row['img_animal']);
           }
@@ -34,7 +34,6 @@ class ImageLoader
             $image->setWidth( $row['img_width'] );
             $image->setHeight( $row['img_height'] );
             $image->setType($row['img_type']);
-
 
             $images[] = $image;
         }
