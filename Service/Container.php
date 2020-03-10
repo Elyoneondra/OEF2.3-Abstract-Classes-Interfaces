@@ -9,6 +9,7 @@ class Container
     private $imageLoader;
     private $uploadService;
     private $authentication;
+    private $imageStorage;
 
     /**
      * @param Config $config
@@ -63,10 +64,21 @@ class Container
     public function getImageLoader()
     {
         if ( $this->imageLoader === null ){
-            $this->imageLoader = new ImageLoader( $this->getDBM() );
+            $this->imageLoader = new ImageLoader($this->getDBM(), $this->getImageStorage());
         }
         return $this->imageLoader;
-    }    
+    }
+
+
+    public function getImageStorage()
+    {
+        if ($this->imageStorage === null) {
+            $this->imageStorage = new PdoImageStorage($this->getPDO());
+            //$this->imageStorage = new JsonFileImageStorage('/Applications/MAMP/htdocs/OEF2.3-Abstract-Classes-Interfaces-master/resources/images.json');
+        }
+
+        return $this->imageStorage;
+    }
 
     /**
      * @return MessageService
