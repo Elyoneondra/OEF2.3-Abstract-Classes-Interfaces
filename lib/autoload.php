@@ -21,6 +21,11 @@ require_once $_root_folder . "/Service/UploadService.php";
 require_once $_root_folder . "/Service/DownloadService.php";
 require_once $_root_folder . "/Service/ViewService.php";
 
+//Interface
+require_once $_root_folder . "/Service/ImageStorageInterface.php";
+require_once $_root_folder . "/Service/PdoImageStorage.php";
+require_once $_root_folder . "/Service/JsonFileImageStorage.php";
+
 session_start();
 
 $Container = new Container( $config );
