@@ -12,11 +12,11 @@ $template = $VS->LoadTemplate("stad_form");
 $type = $images[0]->getType();
 
 if ($type == 'City') {
-          $country = "Country: " . $images[0]->getCountry();
-          $continent = "Continent: " . $images[0]->getContinent();
+          $one = "Country: " . $images[0]->getCountry();
+          $two = "Continent: " . $images[0]->getContinent();
 } else {
-          $animal = "Animal: " . $images[0]->getAnimal();
-          $family = "Family: " . $images[0]->getFamily();
+          $one = "Animal: " . $images[0]->getAnimal();
+          $two = "Family: " . $images[0]->getFamily();
 }
 
 ?>
@@ -24,8 +24,8 @@ if ($type == 'City') {
 
 <div class="jumbotron text-center">
 <h1><?php echo $type ?></h1>
-<p><?php echo $country; echo $animal ?></p>
-<p><?php echo $continent; echo $family ?></p>
+<p><?php echo $one ?></p>
+<p><?php echo $two ?></p>
 
 </div>
 <div class="container">
