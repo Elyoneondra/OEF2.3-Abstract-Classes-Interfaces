@@ -1,92 +1,25 @@
 <?php
-class City
+class City extends AbstactImageInfo
 {
-    private $id;
-    private $filename;
-    private $title;
-    private $width;
-    private $height;
+          private $country;
 
-    /**
-     * @return mixed
-     */
-    public function getId()
-    {
-        return $this->id;
-    }
+          /**
+           * Get the value of country
+           */ 
+          public function getCountry()
+          {
+                    return $this->country;
+          }
 
-    /**
-     * @param mixed $id
-     */
-    public function setId($id)
-    {
-        $this->id = $id;
-    }
+          /**
+           * Set the value of country
+           *
+           * @return  self
+           */ 
+          public function setCountry($country)
+          {
+                    $this->country = $country;
 
-    /**
-     * @return mixed
-     */
-    public function getFileName()
-    {
-        return $this->filename;
-    }
-
-    /**
-     * @param mixed $name
-     */
-    public function setFileName($name)
-    {
-        $this->filename = $name;
-    }
-
-    /**
-     * @return mixed
-     */
-    public function getTitle()
-    {
-        return $this->title;
-    }
-
-    /**
-     * @param mixed $title
-     */
-    public function setTitle($title)
-    {
-        $this->title = $title;
-    }
-
-    /**
-     * @return mixed
-     */
-    public function getWidth()
-    {
-        return $this->width;
-    }
-
-    /**
-     * @param mixed $width
-     */
-    public function setWidth($width)
-    {
-        $this->width = $width;
-    }
-
-    /**
-     * @return mixed
-     */
-    public function getHeight()
-    {
-        return $this->height;
-    }
-
-    /**
-     * @param mixed $height
-     */
-    public function setHeight($height)
-    {
-        $this->height = $height;
-    }
-
-
-
+                    return $this;
+          }
 }
